@@ -1,5 +1,5 @@
 /**
- * Rounds a number to the nearest N where N is any rational number.
+ * Rounds a number to the nearest N where N is any real number.
  * @param a The number which will be rounded
  * @param n The number will be rounded to a multiple of this number
  */
@@ -17,7 +17,7 @@ export function roundN(a: number, _n: number): number {
 }
 
 /**
- * Ceils a number to the nearest N where N is any rational number.
+ * Ceils a number to the nearest N where N is any real number.
  * @param a The number which will be rounded up
  * @param n The number will be rounded up to a multiple of this number
  */
@@ -35,7 +35,7 @@ export function ceilN(a: number, _n: number): number {
 }
 
 /**
- * Floors a number to the nearest N where N is any rational number.
+ * Floors a number to the nearest N where N is any real number.
  * @param a The number which will be rounded down
  * @param n The number will be rounded down to a multiple of this number
  */
