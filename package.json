@@ -1,7 +1,7 @@
 {
-  "name": "typescript-module-starter",
+  "name": "round-n",
   "version": "1.0.0",
-  "description": "",
+  "description": "Round numbers by any number.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -26,16 +26,16 @@
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
     "istanbul-instrumenter-loader": "^3.0.0",
-    "jasmine-core": "^2.99.1",
-    "karma": "^1.7.1",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage-istanbul-reporter": "^1.4.2",
     "karma-jasmine": "^1.1.1",
     "karma-webpack": "^2.0.13",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
-    "ts-loader": "^2.3.7",
+    "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
-    "webpack": "^3.11.0"
+    "webpack": "^4.1.1"
   }
 }
