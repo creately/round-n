@@ -1,6 +1,37 @@
-export function add(x: number, y: number = 0) {
-  if (x === 2) {
-    return y + x;
+/**
+ * Rounds a number to the nearest N where N is any rational number.
+ * @param a The number which will be rounded
+ * @param n The number will be rounded to a multiple of this number
+ */
+export function roundN(a: number, n: number): number {
+  const r = a % n;
+  if (r >= n / 2) {
+    return a - r + n;
+  } else {
+    return a - r;
   }
-  return x + y;
+}
+
+/**
+ * Ceils a number to the nearest N where N is any rational number.
+ * @param a The number which will be rounded up
+ * @param n The number will be rounded up to a multiple of this number
+ */
+export function ceilN(a: number, n: number): number {
+  const r = a % n;
+  if (r > 0) {
+    return a - r + n;
+  } else {
+    return a;
+  }
+}
+
+/**
+ * Floors a number to the nearest N where N is any rational number.
+ * @param a The number which will be rounded down
+ * @param n The number will be rounded down to a multiple of this number
+ */
+export function floorN(a: number, n: number): number {
+  const r = a % n;
+  return a - r;
 }

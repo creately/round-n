@@ -1,3 +1,32 @@
-# typescript-module-starter
+# round-n
 
-A bare minimum starter repository for client side npm modules written in typescript. Includes `prettier` for linting, `karma` and `jasmine` for unit tests and `istanbul` for coverage. Uses `webpack` to transpile typescript when running tests. To get started, clone this repository and run npm install.
+Round numbers by any number.
+
+## Examples
+
+### roundN
+
+```ts
+import { roundN } from '@creately/round-n';
+
+roundN(113, 2.5) // 112.5
+roundN(6, Math.PI) // 6.28...
+```
+
+### ceilN
+
+```ts
+import { ceilN } from '@creately/round-n';
+
+ceilN(113, 2.5) // 115
+ceilN(6, Math.PI) // 6.28...
+```
+
+### floorN
+
+```ts
+import { ceilN } from '@creately/round-n';
+
+ceilN(113, 2.5) // 112.5
+ceilN(6, Math.PI) // 3.14...
+```

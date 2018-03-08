@@ -1,13 +1,52 @@
-import { add } from '../';
+import { roundN, ceilN, floorN } from '..';
 
-describe('add', () => {
-  it('should add 1 and 2', () => {
-    expect(add(1, 2)).toBe(1 + 2);
+describe('roundN', () => {
+  [
+    { val: 125, num: 30, out: 120 },
+    { val: 145, num: 30, out: 150 },
+    { val: 12.5, num: 3, out: 12 },
+    { val: 14.5, num: 3, out: 15 },
+    { val: 12.7, num: 2.5, out: 12.5 },
+    { val: 14.7, num: 2.5, out: 15 },
+    { val: 11, num: 2.5, out: 10 },
+    { val: 12, num: 2.5, out: 12.5 },
+  ].forEach(({ val, num, out }) => {
+    it(`should round ${val} to the nearest ${num} (${out})`, () => {
+      expect(roundN(val, num)).toBe(out);
+    });
   });
-  it('should add 1 and 3', () => {
-    expect(add(1, 3)).toBe(1 + 3);
+});
+
+describe('ceilN', () => {
+  [
+    { val: 125, num: 30, out: 150 },
+    { val: 145, num: 30, out: 150 },
+    { val: 12.5, num: 3, out: 15 },
+    { val: 14.5, num: 3, out: 15 },
+    { val: 12.7, num: 2.5, out: 15 },
+    { val: 14.7, num: 2.5, out: 15 },
+    { val: 11, num: 2.5, out: 12.5 },
+    { val: 12, num: 2.5, out: 12.5 },
+  ].forEach(({ val, num, out }) => {
+    it(`should ceil ${val} to the nearest ${num} (${out})`, () => {
+      expect(ceilN(val, num)).toBe(out);
+    });
   });
-  it('should add 1 and 4', () => {
-    expect(add(1, 4)).toBe(1 + 4);
+});
+
+describe('floorN', () => {
+  [
+    { val: 125, num: 30, out: 120 },
+    { val: 145, num: 30, out: 120 },
+    { val: 12.5, num: 3, out: 12 },
+    { val: 14.5, num: 3, out: 12 },
+    { val: 12.7, num: 2.5, out: 12.5 },
+    { val: 14.7, num: 2.5, out: 12.5 },
+    { val: 11, num: 2.5, out: 10 },
+    { val: 12, num: 2.5, out: 10 },
+  ].forEach(({ val, num, out }) => {
+    it(`should floor ${val} to the nearest ${num} (${out})`, () => {
+      expect(floorN(val, num)).toBe(out);
+    });
   });
 });
