@@ -4,8 +4,8 @@
  * @param n The number will be rounded to a multiple of this number
  */
 export function roundN(a: number, _n: number): number {
-  if ( a < 0 ) {
-    return -roundN( -a, _n );
+  if (a < 0) {
+    return -roundN(-a, _n);
   }
   const n = Math.abs(_n);
   const r = a % n;
@@ -22,8 +22,8 @@ export function roundN(a: number, _n: number): number {
  * @param n The number will be rounded up to a multiple of this number
  */
 export function ceilN(a: number, _n: number): number {
-  if ( a < 0 ) {
-    return -floorN( -a, _n );
+  if (a < 0) {
+    return -floorN(-a, _n);
   }
   const n = Math.abs(_n);
   const r = a % n;
@@ -40,8 +40,8 @@ export function ceilN(a: number, _n: number): number {
  * @param n The number will be rounded down to a multiple of this number
  */
 export function floorN(a: number, _n: number): number {
-  if ( a < 0 ) {
-    return -ceilN( -a, _n );
+  if (a < 0) {
+    return -ceilN(-a, _n);
   }
   const n = Math.abs(_n);
   const r = a % n;
