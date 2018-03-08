@@ -1,5 +1,5 @@
 {
-  "name": "round-n",
+  "name": "@creately/round-n",
   "version": "1.0.0",
   "description": "Round numbers by any number.",
   "main": "dist/index.js",
