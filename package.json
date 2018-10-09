@@ -13,29 +13,21 @@
     "test:cover": "npm run test && open coverage/index.html",
     "prepublish": "npm run clean && npm run lint && npm run build"
   },
-  "keywords": [
-    "karma",
-    "typescript",
-    "jasmine",
-    "istanbul",
-    "webpack",
-    "coverage"
-  ],
-  "author": "Muhammed Thanish <mnmtanish@gmail.com> (http://thanish.me/)",
+  "author": "Anonymous",
   "license": "MIT",
   "devDependencies": {
-    "@types/jasmine": "^2.8.6",
-    "istanbul-instrumenter-loader": "^3.0.0",
-    "jasmine-core": "^3.1.0",
-    "karma": "^2.0.0",
+    "@types/jasmine": "^2.8.9",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
     "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage-istanbul-reporter": "^1.4.2",
-    "karma-jasmine": "^1.1.1",
-    "karma-webpack": "^2.0.13",
-    "prettier": "^1.11.1",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-jasmine": "^1.1.2",
+    "karma-webpack": "^3.0.5",
+    "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
-    "ts-loader": "^4.0.1",
-    "typescript": "^2.7.2",
-    "webpack": "^4.1.1"
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2"
   }
 }
