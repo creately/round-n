@@ -1,5 +1,7 @@
 # round-n
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/creately/round-n.svg)](https://greenkeeper.io/)
+
 Round numbers by any number.
 
 ## Examples
